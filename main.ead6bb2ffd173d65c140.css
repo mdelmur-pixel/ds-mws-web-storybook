@@ -3,66 +3,76 @@
 /*
   Design tokens — Couleurs
   ------------------------
-  Les valeurs marquées PLACEHOLDER n'ont pas pu être extraites automatiquement
-  depuis Figma (page "Color" sans variables directement accessibles).
-  À remplacer par les valeurs exactes via le plugin "zeroheight - variables sync"
-  ou en resynchronisant directement depuis Figma.
+  Valeurs extraites directement des variables Figma du fichier DS MWS Web
+  (composants Button, Card, Tag, Input, Checkbox, Toast).
 */
 
 :root {
-  /* Neutrals — confirmés depuis Figma (via les styles de typographie) */
+  /* Neutrals */
   --color-neutral-30: #f9fafc;
   --color-neutral-50: #f3f5f7;
-  --color-neutral-100: #e7eaf0; /* PLACEHOLDER (interpolé) */
-  --color-neutral-200: #d3d9e3; /* PLACEHOLDER (interpolé) */
-  --color-neutral-300: #b3bccc; /* PLACEHOLDER (interpolé) */
-  --color-neutral-400: #8b96ab; /* PLACEHOLDER (interpolé) */
-  --color-neutral-500: #67748c; /* PLACEHOLDER (interpolé) */
-  --color-neutral-600: #4c5b74; /* PLACEHOLDER (interpolé) */
-  --color-neutral-700: #38455c; /* PLACEHOLDER (interpolé) */
-  --color-neutral-800: #263149; /* PLACEHOLDER (interpolé) */
-  --color-neutral-900: #1c2b45; /* PLACEHOLDER (interpolé) */
+  --color-neutral-subtext: #5d7495;
+  --color-neutral-filled: #173967;
   --color-neutral-1000: #173967;
   --color-white: #ffffff;
 
   /* Neutre = texte, fonds, bordures */
-  --color-text-primary: var(--color-neutral-1000);
-  --color-text-secondary: var(--color-neutral-600);
-  --color-border: var(--color-neutral-200);
+  --color-text-primary: var(--color-neutral-filled);
+  --color-text-secondary: var(--color-neutral-subtext);
+  --color-border: #d7deea;
   --color-surface: var(--color-white);
-  --color-surface-subtle: var(--color-neutral-50);
+  --color-surface-subtle: var(--color-neutral-30);
 
-  /* Brand = actions + repérage utilisateur (position/sélection active) */
-  --color-brand: #173967; /* PLACEHOLDER — à confirmer */
-  --color-brand-hover: #0f2a4f; /* PLACEHOLDER */
-  --color-brand-pressed: #0a1e3a; /* PLACEHOLDER */
+  /* Brand = actions + repérage utilisateur */
+  --color-brand: #487afb;
+  --color-brand-hover: #769bfc;
+  --color-brand-pressed: #2e5fd9;
+  --color-brand-elevated: #f4f7ff;
 
-  /* Bleu ciel = ressource Parking + couleur principale de la plateforme
-     (utilisée avec Brand pour la cohérence des illustrations) */
-  --color-sky-blue: #4fb6e8; /* PLACEHOLDER */
+  /* Bleu ciel = ressource Parking + couleur principale de la plateforme */
+  --color-sky-blue: #32c5ff;
   --color-resource-parking: var(--color-sky-blue);
+  --color-resource-parking-bg: #eaf9ff;
 
   /* Vert = statut Succès + ressource Bureau */
-  --color-green: #2e9e5b; /* PLACEHOLDER */
+  --color-green: #43e3b7;
   --color-success: var(--color-green);
   --color-resource-bureau: var(--color-green);
+  --color-resource-bureau-bg: #ecfcf8;
 
   /* Jaune = ressource Restaurant */
-  --color-yellow: #f5b93b; /* PLACEHOLDER */
+  --color-yellow: #ffc937;
   --color-resource-restaurant: var(--color-yellow);
 
   /* Orange = statut Warning + ressource Espace */
-  --color-orange: #f08a3c; /* PLACEHOLDER */
+  --color-orange: #ff984e;
   --color-warning: var(--color-orange);
   --color-resource-espace: var(--color-orange);
+  --color-resource-espace-bg: #fff5ed;
 
   /* Rouge = statut Error/Danger + ressource Demande d'intervention (DI) */
-  --color-red: #e5484d; /* PLACEHOLDER */
+  --color-red: #ff7070;
   --color-danger: var(--color-red);
   --color-resource-di: var(--color-red);
+  --color-resource-di-bg: #fff1f1;
 
-  /* Information (statut neutre informatif) */
-  --color-info: #4fb6e8; /* PLACEHOLDER — aligné sur le bleu ciel */
+  /* Information */
+  --color-info: #32c5ff;
+
+  /* Rayons */
+  --radius-pill: 32px;
+  --radius-tag: 16px;
+  --radius-card: 16px;
+  --radius-field: 12px;
+
+  /* Espacements */
+  --spacing-50: 4px;
+  --spacing-100: 8px;
+  --spacing-200: 16px;
+  --spacing-300: 24px;
+
+  /* Ombres */
+  --shadow-md: 0 4px 10px rgba(0,0,0,0.078), 0 1px 4px rgba(0,0,0,0.039);
 }
 
 /*
