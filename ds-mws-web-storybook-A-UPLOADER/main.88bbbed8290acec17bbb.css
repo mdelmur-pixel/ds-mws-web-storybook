@@ -1,0 +1,117 @@
+/* You can add global styles to this file, and also import other style files */
+
+/*
+  Design tokens — Couleurs
+  ------------------------
+  Les valeurs marquées PLACEHOLDER n'ont pas pu être extraites automatiquement
+  depuis Figma (page "Color" sans variables directement accessibles).
+  À remplacer par les valeurs exactes via le plugin "zeroheight - variables sync"
+  ou en resynchronisant directement depuis Figma.
+*/
+
+:root {
+  /* Neutrals — confirmés depuis Figma (via les styles de typographie) */
+  --color-neutral-30: #f9fafc;
+  --color-neutral-50: #f3f5f7;
+  --color-neutral-100: #e7eaf0; /* PLACEHOLDER (interpolé) */
+  --color-neutral-200: #d3d9e3; /* PLACEHOLDER (interpolé) */
+  --color-neutral-300: #b3bccc; /* PLACEHOLDER (interpolé) */
+  --color-neutral-400: #8b96ab; /* PLACEHOLDER (interpolé) */
+  --color-neutral-500: #67748c; /* PLACEHOLDER (interpolé) */
+  --color-neutral-600: #4c5b74; /* PLACEHOLDER (interpolé) */
+  --color-neutral-700: #38455c; /* PLACEHOLDER (interpolé) */
+  --color-neutral-800: #263149; /* PLACEHOLDER (interpolé) */
+  --color-neutral-900: #1c2b45; /* PLACEHOLDER (interpolé) */
+  --color-neutral-1000: #173967;
+  --color-white: #ffffff;
+
+  /* Neutre = texte, fonds, bordures */
+  --color-text-primary: var(--color-neutral-1000);
+  --color-text-secondary: var(--color-neutral-600);
+  --color-border: var(--color-neutral-200);
+  --color-surface: var(--color-white);
+  --color-surface-subtle: var(--color-neutral-50);
+
+  /* Brand = actions + repérage utilisateur (position/sélection active) */
+  --color-brand: #173967; /* PLACEHOLDER — à confirmer */
+  --color-brand-hover: #0f2a4f; /* PLACEHOLDER */
+  --color-brand-pressed: #0a1e3a; /* PLACEHOLDER */
+
+  /* Bleu ciel = ressource Parking + couleur principale de la plateforme
+     (utilisée avec Brand pour la cohérence des illustrations) */
+  --color-sky-blue: #4fb6e8; /* PLACEHOLDER */
+  --color-resource-parking: var(--color-sky-blue);
+
+  /* Vert = statut Succès + ressource Bureau */
+  --color-green: #2e9e5b; /* PLACEHOLDER */
+  --color-success: var(--color-green);
+  --color-resource-bureau: var(--color-green);
+
+  /* Jaune = ressource Restaurant */
+  --color-yellow: #f5b93b; /* PLACEHOLDER */
+  --color-resource-restaurant: var(--color-yellow);
+
+  /* Orange = statut Warning + ressource Espace */
+  --color-orange: #f08a3c; /* PLACEHOLDER */
+  --color-warning: var(--color-orange);
+  --color-resource-espace: var(--color-orange);
+
+  /* Rouge = statut Error/Danger + ressource Demande d'intervention (DI) */
+  --color-red: #e5484d; /* PLACEHOLDER */
+  --color-danger: var(--color-red);
+  --color-resource-di: var(--color-red);
+
+  /* Information (statut neutre informatif) */
+  --color-info: #4fb6e8; /* PLACEHOLDER — aligné sur le bleu ciel */
+}
+
+/*
+  Design tokens — Typographie
+  ----------------------------
+  Valeurs confirmées depuis les variables Figma (famille Poppins).
+*/
+
+:root {
+  --font-family-primary: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --font-size-xs: 10px;
+  --font-size-sm: 12px;
+  --font-size-md: 14px;
+  --font-size-lg: 24px;
+  --font-size-xl: 48px;
+
+  --line-height-sm: 16px;
+  --line-height-md: 20px;
+  --line-height-xl: 32px;
+  --line-height-2xl: 48px;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+}
+
+body {
+  font-family: var(--font-family-primary);
+  color: var(--color-text-primary);
+  margin: 0;
+}
+
+.ds-display-strong {
+  font: var(--font-weight-medium) var(--font-size-xl) / var(--line-height-2xl) var(--font-family-primary);
+}
+.ds-heading-strong {
+  font: var(--font-weight-semibold) var(--font-size-md) / var(--line-height-md) var(--font-family-primary);
+}
+.ds-heading-regular {
+  font: var(--font-weight-regular) var(--font-size-md) / var(--line-height-md) var(--font-family-primary);
+}
+.ds-body-strong {
+  font: var(--font-weight-semibold) var(--font-size-sm) / var(--line-height-sm) var(--font-family-primary);
+}
+.ds-body-regular {
+  font: var(--font-weight-regular) var(--font-size-sm) / var(--line-height-sm) var(--font-family-primary);
+}
+.ds-caption-regular {
+  font: var(--font-weight-regular) var(--font-size-xs) / var(--line-height-sm) var(--font-family-primary);
+}
+
